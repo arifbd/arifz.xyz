@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Arif - Personal Resume</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js?ver=3.3"></script>	
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+</head>
+
+<body>
+<div id="header">
+	<div id="logo"><a href="#"><img src="images/logo.png"></a></div>
+	<ul id="main-menu">
+    	<li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <!-- <li><a href="#work">Work</a></li> -->
+        <li><a href="#connect">Connect</a></li>
+    </ul>
+</div>
+
+<div id="container">
+
+<!--Begin About Section-->
+    <div id="about">
+    	<h1>About</h1>
+        <div class="top-divider"></div>
+        <div class="content">
+        	<img src="images/designer-photo.jpg" />
+            <h2>My Name is Md Nazmul Haque Arif, and I am a Software Engineer</h2>
+            <p>I have obtained bachelor degree in Computer Science and Engineering from the State University of Bangladesh. During my studies, I have been acquiring work experience in various fields and lately I have been concentrating on software development on the Android platform.</p>
+
+            <p>I have in total over three years of active Android development experience. I have worked on numerous projects used by hundreds of thousands of people. I'm always upgrade me with new technologies. So fur my achivements in Android technology are MVVM, AndroidX, Jetpack Components, Data binding, LiveData, Lifecycles, Navigation, Paging, Room, ViewModel, WorkManager, Coroutines, Retrofit, Volley, Glide, Picasso, SQLite, Firebase, Push Notification, Google Map, Debug bridge(Stetho, Debug DB) etc.</p>
+
+            <p>I have also developed REST APIs using Slim framework. And also developed few web app using raw PHP.</p>
+
+            <p>I am eager to constantly learn new things. At the moment, my focus is on the Spring boot and of course I am always up for trying out the newest Android libraries.</p> 
+        
+        </div>
+    <div class="bottom-divider"></div> 
+    </div>
+<!--End About Section-->
+
+<!--Begin Experience Section-->   
+    <div id="experience">
+    	<h1>Experience</h1>
+        <div class="top-divider"></div>
+        <div class="content">
+            <div class="col col-mid">
+            <h2>Software Engineer (Android)</h2>
+            <h3>CMED Health Limited</h3>
+            <ul>
+                <li>Involve and participate in the overall application life-cycle</li>
+                <li>Design, build, and maintain high performance, reusable, and reliable code</li>
+                <li>Identify and correct bottlenecks and fix bugs</li>
+                <li>Ensure the best possible performance, quality, and responsiveness of the application</li>
+                <li>Collaborate with cross-functional teams to define, design, and ship new features</li>
+                <li>Continuously discover, evaluate, and implement new technologies to maximize development efficiency</li>
+            </ul>
+            </div>
+            
+            <div class="col col-mid">
+            <h2>Junior Software Engineer</h2>
+            <h3>Technomedia Limited</h3>
+            <ul>
+                <li>Designed, developed and tested Android and Web applications</li>
+                <li>Wrote maintainable and extensible code in a team environment</li>
+                <li>Modified existing software to correct errors, upgrade interfaces
+                and improve performance</li>
+                <li>Collaborated with team members to create applications system
+                analysis based upon client requirements</li>
+                <li>Developed REST APIs with PHP (Slim framework)</li>
+                <li>Worked effectively with management teams to ensure software solutions
+                elevated client side experience</li>
+            </ul>
+            </div>
+        </div>    
+        <div class="bottom-divider"></div>
+    </div>
+<!--End Experience Section-->
+
+<!--Begin Connect Section-->  
+    <div id="connect">
+    	<h1>Connect</h1>
+        <div class="top-divider"></div>
+        	<div class="content">
+            	<div id="form">
+                	<form action="#">
+                    	<span>Name</span>
+                        <input type="text" name="name" class="name" />
+                        <span>Email</span>
+                        <input type="text" name="email" class="email"/>
+                        <span>Message</span>
+                        <textarea class="message"></textarea>
+                        <input type="submit" name="submite" value="Submit" class="submit">
+                    </form>
+                </div>
+                <div id="social-footer">
+                	<h2>Follow Me:</h2>
+                    <p>ways to connect with me.</p>
+                    <ul id="sm-links">
+                    	<li><a href="https://www.facebook.com/o7arif" class="facebook">Facebook</a></li>
+           				<!-- <li><a href="#" class="twitter">Twitter</a></li> -->
+                        <li><a href="https://www.youtube.com/channel/UCXnu-rnpSkDPvcXbN6eMvIg" class="youtube">YouTube</a></li>
+                        <li><a href="https://www.linkedin.com/in/o7arif" class="linkedin">LinkedIn</a></li>
+                        <li><a href="https://github.com/arifbd" class="github">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+<!--End Connect Section--> 
+
+</div>
+
+ <!-- The JavaScript -->  
+        <script type="text/javascript">
+    		$(function() {
+                $('#main-menu li a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+
+                    event.preventDefault();
+                });
+            });
+			
+ 			 $(document).ready(function(){
+    		$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false, deeplinking: false});
+  			});
+
+        </script>
+</body>
+</html>
