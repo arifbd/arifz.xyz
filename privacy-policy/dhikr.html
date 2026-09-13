@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for Dhikr - Tasbeeh & Zikr Counter by arifz. Learn about local storage, analytics, crash reports, and your choices.">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy | Dhikr - Tasbeeh &amp; Zikr Counter</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f6f8f5; --paper:#fff; --text:#202d28; --muted:#53645b; --accent:#236043; --line:#dce5dd; --tint:#eef5ef; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:17px/1.75 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(100% - 32px,820px); margin:48px auto; padding:clamp(24px,5vw,56px); background:var(--paper); border:1px solid var(--line); border-radius:20px; }
+    header { border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:28px; }
+    .brand { color:var(--accent); font-weight:650; margin:0 0 8px; }
+    h1 { font-size:clamp(2rem,6vw,3rem); line-height:1.15; letter-spacing:-.035em; margin:0 0 16px; }
+    h2 { font-size:1.25rem; line-height:1.4; margin:34px 0 12px; }
+    h3 { font-size:1.05rem; margin:22px 0 8px; }
+    p { margin:0 0 16px; }
+    .meta,footer { color:var(--muted); font-size:.9rem; }
+    .summary { background:var(--tint); border-left:4px solid var(--accent); padding:20px 24px; border-radius:0 10px 10px 0; }
+    ul { padding-left:24px; margin:12px 0 20px; }
+    li { margin:7px 0; }
+    a { color:var(--accent); text-underline-offset:3px; overflow-wrap:anywhere; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    footer { border-top:1px solid var(--line); margin-top:32px; padding-top:22px; }
+    @media (prefers-color-scheme:dark) { :root { --bg:#101713; --paper:#19231d; --text:#e6eee8; --muted:#b2c3b7; --accent:#99d6ac; --line:#34463a; --tint:#24352a; } }
+    @media (max-width:480px) { body { font-size:16px; } main { margin:16px auto; border-radius:12px; } .summary { padding:16px; } }
+    @media print { :root { --paper:#fff; --text:#000; --muted:#333; --accent:#17452b; --line:#ccc; --tint:#fff; } body { background:#fff; font-size:11pt; } main { width:100%; margin:0; padding:0; border:0; } h2,h3 { break-after:avoid; } a { color:inherit; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand">Dhikr - Tasbeeh &amp; Zikr Counter</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Developer: arifz<br>Last updated: <time datetime="2026-09-13">September 13, 2026</time></p>
+    <p>This policy explains how arifz ("we", "us") handles information in the Android app Dhikr - Tasbeeh &amp; Zikr Counter ("Dhikr"), package <span>xyz.arifz.dhikr</span>.</p>
+  </header>
+
+  <aside class="summary" aria-label="Privacy at a glance">
+    <strong>Privacy at a glance</strong>
+    <ul>
+      <li>Counting, routines, history, and streaks work offline. No account is required and there are no ads.</li>
+      <li>Your records are stored on your device. Android backup may copy them according to your system settings.</li>
+      <li>Usage analytics is enabled by default and can be turned off in Settings. It includes preset names, completion counts, and streak milestones.</li>
+      <li>Automatic crash reporting remains enabled even when usage analytics is off.</li>
+    </ul>
+  </aside>
+
+  <section aria-labelledby="local">
+    <h2 id="local">1. Information stored on your device</h2>
+    <p>Dhikr stores completed sessions (including preset titles, counts, and completion times), unfinished session progress, custom presets (including titles, Arabic text, transliteration, and target counts), and app preferences in its private Android storage. Streaks and activity summaries are calculated from these records.</p>
+    <p>There is no Dhikr account or developer-operated cloud sync for these records. However, selected details about your activity are sent to Firebase when analytics is enabled, as explained below. Local storage does not mean that no activity information leaves your device.</p>
+  </section>
+
+  <section aria-labelledby="analytics">
+    <h2 id="analytics">2. Usage analytics</h2>
+    <p>Dhikr uses Google Analytics for Firebase to understand feature usage and improve the app. Analytics is <strong>enabled by default</strong>, including on first use. You can turn it off using the <strong>Analytics toggle in Settings</strong>.</p>
+    <p>The app records events such as screens viewed, preset selections, free counting, completed sessions, streak milestones, custom preset creation or deletion, changes to language, theme, sound, haptics or reminders, and use of the Share App button. Event details can include preset identifiers and names, total completed counts, streak length, and selected settings.</p>
+    <p><strong>Custom preset titles are included:</strong> when you select or complete a custom preset, the title you entered can be sent with the event. These titles and activity events may reveal information about your religious practice or anything personal you put in a title. Arabic text and transliteration are not deliberately attached as separate analytics fields.</p>
+    <p>The Analytics SDK also collects app-instance identifiers, app and device information, interaction timestamps, session and engagement information, and installation or referral information. It can derive approximate location, such as country or city, from your IP address. Google states that Analytics does not log or store individual IP addresses. Dhikr does not request GPS location access.</p>
+    <p>These records use identifiers and are <strong>not completely anonymous</strong>. Dhikr does not ask you to register a name, email address, or phone number, and does not set an account-based user ID. The app is configured to disable Analytics collection of the Android advertising ID.</p>
+    <p>Turning analytics off stops future Analytics collection once the setting takes effect; the app logs the opt-out action before disabling collection. Turning it off does not automatically delete data already collected and does not disable crash reporting. Offline collection may be queued for later transmission when a connection is available.</p>
+  </section>
+
+  <section aria-labelledby="crashes">
+    <h2 id="crashes">3. Crash and diagnostic reporting</h2>
+    <p>Dhikr uses Firebase Crashlytics to diagnose crashes, app unresponsiveness, and stability problems. Automatic reporting is enabled, and the current app does not offer a switch to disable it.</p>
+    <p>Reports and associated diagnostics may contain error stack traces, event times, app version and state, device model, operating-system version, memory and storage information, and installation or session identifiers. When Analytics is enabled, recent analytics events and their parameters may also appear as diagnostic breadcrumbs.</p>
+    <p>Diagnostic information may be saved locally and uploaded later, including on a subsequent app launch. Crashlytics and its supporting services can collect installation and session information as part of their operation, not only at the instant a crash occurs.</p>
+  </section>
+
+  <section aria-labelledby="services">
+    <h2 id="services">4. Service providers and other disclosures</h2>
+    <p>Google receives and processes analytics and diagnostic information through Firebase and Google Analytics. We use the resulting reports to understand usage and resolve problems. Google may process information on servers outside your country under its applicable terms and privacy safeguards.</p>
+    <p>Dhikr also uses Google Play's in-app update service to check for and offer updates. Google Play handles update delivery under its own terms and privacy practices.</p>
+    <p>There are no advertising placements in Dhikr. We do not sell your data. Information may also be disclosed where required by applicable law or to protect legal rights and security.</p>
+    <ul>
+      <li><a href="https://firebase.google.com/support/privacy">Firebase privacy and security information</a></li>
+      <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+      <li><a href="https://support.google.com/analytics/answer/6004245">How Google Analytics safeguards data</a></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="backup">
+    <h2 id="backup">5. Android backup and device transfer</h2>
+    <p>Android backup is enabled for the app. Depending on your Android version, device, and settings, the system may back up app records and preferences to your Google account or transfer them to another device. Restoring a backup may restore previously saved records and settings.</p>
+    <p>You control system backup through Android and your Google account. Clearing app storage or uninstalling the app does not necessarily remove existing backup copies. Manage or delete those copies through your backup provider's controls.</p>
+  </section>
+
+  <section aria-labelledby="permissions">
+    <h2 id="permissions">6. Permissions and reminders</h2>
+    <p>Notification permission is used for daily reminders. These reminders are scheduled and generated on your device using local session and streak information; they do not require a remote notification server. A reminder may include a preset title and may appear on your lock screen, depending on Android settings. You can turn reminders off in Dhikr or manage notification access and visibility in Android settings.</p>
+    <p>Internet and network-state access support online services such as analytics and diagnostics. Android libraries may also use background-work, boot, foreground-service, installation-referral, and related system permissions. Core counting features remain available offline.</p>
+    <p>Dhikr does not request access to your contacts, camera, microphone, precise location, or shared photos and files.</p>
+  </section>
+
+  <section aria-labelledby="contact-data">
+    <h2 id="contact-data">7. App sharing and messages to us</h2>
+    <p>Share App opens Android's share interface with a short message and a Play Store link. Dhikr does not receive the recipient's identity or your conversations. The receiving app handles that sharing under its own privacy policy. Use of the share button may be recorded as an analytics event.</p>
+    <p>If you email us, we receive your email address, message, and any information or attachments you choose to send. We use them to respond to questions, suggestions, feature requests, and privacy inquiries. Our email provider processes those messages. Please include only information needed for your request.</p>
+  </section>
+
+  <section aria-labelledby="retention">
+    <h2 id="retention">8. Retention, deletion, and your choices</h2>
+    <ul>
+      <li><strong>Local records:</strong> retained while the app stores them. You can delete custom presets in the app. To remove all local app records, use Android Settings → Apps → Dhikr → Storage → Clear storage/data, or uninstall Dhikr. Labels vary by device. Backup copies are handled separately.</li>
+      <li><strong>Analytics:</strong> previously collected data is retained under the Google Analytics property's retention settings and Google's retention rules. User- and event-level retention differs from aggregated reporting; some retention periods may renew with activity. Disabling analytics or deleting local app data does not itself delete server-side reports. See <a href="https://support.google.com/analytics/answer/7667196">Google Analytics retention controls</a>.</li>
+      <li><strong>Crash reports:</strong> Google states that Crashlytics retains crash information and associated identifiers for 90 days before beginning removal from live and backup systems.</li>
+      <li><strong>Support email:</strong> retained as needed to handle your request and necessary follow-up, or meet applicable legal obligations. You may request deletion by emailing us.</li>
+    </ul>
+    <p>Depending on your location, you may have rights to access, correct, delete, or restrict the use of personal data, or object to its processing. Contact us to make a request. We do not have access to the records stored only on your device, and without an account we may be unable to identify which installation-based analytics or diagnostic records belong to you. We will explain what can be identified and addressed rather than promise deletion of records we cannot locate.</p>
+    <p>Clearing app storage resets preferences, so default analytics settings may apply on a fresh start unless a saved setting is restored. Review Settings after reinstalling or restoring the app.</p>
+  </section>
+
+  <section aria-labelledby="security">
+    <h2 id="security">9. Security</h2>
+    <p>Local records are protected by Android's app storage isolation and your device's security settings. Firebase services use encrypted network transport. No storage or transmission method guarantees absolute security; secure your device and any account used for system backups.</p>
+  </section>
+
+  <section aria-labelledby="children">
+    <h2 id="children">10. Children and privacy</h2>
+    <p>Dhikr does not ask for age or date of birth and does not create user accounts. The analytics and diagnostic collection described above can occur for anyone using the app; absence of an account does not make that information anonymous. A parent or guardian with concerns about information relating to a child can contact us for assistance and available deletion options.</p>
+  </section>
+
+  <section aria-labelledby="changes">
+    <h2 id="changes">11. Changes to this policy</h2>
+    <p>We may update this policy as the app or its data practices change. Updates will be posted on this page with a revised date. Where required, we will provide additional notice or request consent before a change takes effect.</p>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">12. Contact</h2>
+    <p>For privacy questions, data requests, suggestions, or feature requests, contact <strong>arifz</strong>, developer of Dhikr - Tasbeeh &amp; Zikr Counter:</p>
+    <p><a href="mailto:arif991846@gmail.com">arif991846@gmail.com</a></p>
+  </section>
+  <footer><strong>Thank You!</strong> <br> <strong>Website:</strong> <a href="https://arifz.xyz">arifz.xyz</a></footer>
+</main>
+</body>
+</html>
