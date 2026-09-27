@@ -1,0 +1,95 @@
+/* Portfolio section spacing comes from the existing container/row/section-separator. */
+#personal-projects {
+    scroll-margin-top: 100px;
+}
+
+#personal-projects h2 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+#personal-projects .personal-projects-intro {
+    max-width: 760px;
+    margin-bottom: 32px;
+    color: #b9b9c2;
+}
+
+#personal-projects .personal-projects-intro a {
+    color: #dddde3;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+#personal-projects .app-showcase {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 32px;
+    border: 1px solid #ffffff24;
+    border-radius: 16px;
+}
+
+#personal-projects .app-showcase-icon {
+    width: 88px;
+    height: 88px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+#personal-projects .app-showcase-copy {
+    flex: 1;
+    min-width: 0;
+}
+
+#personal-projects .app-showcase-copy h3 {
+    margin: 0 0 9px;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+#personal-projects .app-showcase-copy p {
+    margin: 0;
+    max-width: 540px;
+    color: #d0ced7;
+}
+
+#personal-projects .app-showcase-link {
+    display: inline-block;
+    flex-shrink: 0;
+    padding: 12px 20px;
+    border: 1px solid #c0a8ef;
+    border-radius: 8px;
+    color: #eee4ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#personal-projects .app-showcase-link:hover {
+    background: #463462;
+}
+
+#personal-projects a:focus-visible {
+    outline: 3px solid #c0a8ef;
+    outline-offset: 5px;
+}
+
+@media (max-width: 767px) {
+    #personal-projects .app-showcase {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 24px;
+    }
+    #personal-projects .app-showcase-icon {
+        width: 64px;
+        height: 64px;
+    }
+    #personal-projects .app-showcase-copy {
+        flex-basis: calc(100% - 84px);
+    }
+    #personal-projects .app-showcase-link {
+        width: 100%;
+        text-align: center;
+    }
+}
