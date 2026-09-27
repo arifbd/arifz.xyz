@@ -38,6 +38,10 @@
     border-radius: 20px;
 }
 
+#personal-projects .app-showcase + .app-showcase {
+    margin-top: 24px;
+}
+
 #personal-projects .app-showcase-copy {
     flex: 1;
     min-width: 0;

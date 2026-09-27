@@ -1,0 +1,23 @@
+/* Dhikr-specific details; colors and layout come from the shared app stylesheet. */
+.dhikr-features .feature-number {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    color: var(--accent);
+    font-size: 14px;
+}
+
+.dhikr-screenshots {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+}
+
+@media (max-width: 640px) {
+    .dhikr-screenshots {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 15px;
+    }
+}
