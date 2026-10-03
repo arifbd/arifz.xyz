@@ -1,0 +1,13 @@
+CareDose does not require login, registration, payment or an external account. Family profiles are local records, not sign-in accounts.
+
+On a fresh installation, tap “Explore with sample data” on the welcome screen. This opens local example family profiles, medicines and dose records. The sample records are for testing only, not treatment advice.
+
+Review Home, Family, Medicines and History. Open a dose to record it as given or skipped. In More, review the weekly summary, language choices, reminders, backup/restore, Privacy and About.
+
+To test notifications, enable them under More > Reminders and allow the requested Android notification/alarm access. Use a sample medicine with a future dose time. Notification delivery depends on device settings.
+
+To test backup, export to a test folder you control. Restore only into a disposable test installation because it replaces current records. No personal health information is required.
+
+More > Clear demo and start fresh removes the sample records and returns to setup. To test with your own fictional profile, use this option and add a profile and medicine manually.
+
+No username, password, OTP or QR code is required. All demo access is local and does not depend on region or an expiring credential.

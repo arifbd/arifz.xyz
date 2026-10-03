@@ -1,0 +1,3 @@
+Welcome to CareDose. Keep medicine schedules and dose records for yourself and your family in one place, with reminders, prescription photos and file backups.
+
+New here? Try “Explore with sample data” to look around before adding your own records.
