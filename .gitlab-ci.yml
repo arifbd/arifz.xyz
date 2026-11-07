@@ -1,11 +1,13 @@
-# This file is a template, and might need editing before it works on your project.
-# Full project: https://gitlab.com/pages/plain-html
+# Stage only the website; internal documentation never enters the Pages artifact.
+image: alpine:3.22
 pages:
   stage: deploy
   script:
-    - mkdir .public
-    - cp -r * .public
-    - mv .public public
+    - mkdir -p public
+    - cp index.html 404.html CNAME robots.txt sitemap.xml public/
+    - cp -R assets apps privacy-policy public/
+    - find public -type f \( -name '.*' -o -name '*.md' -o -name '*.pyc' \) -delete
+    - find public -type d \( -name '.*' -o -name '__pycache__' \) -prune -exec rm -rf {} +
   artifacts:
     paths:
       - public

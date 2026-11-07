@@ -1,0 +1,10 @@
+* { box-sizing:border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.7 var(--font-body); }
+main { max-width:760px; margin:12vh auto; padding:24px; }
+.brand { font-size:32px; font-weight:800; }
+h1 { font-size:clamp(40px,8vw,72px); line-height:1.1; letter-spacing:-.05em; }
+p { color:var(--muted); }
+a { color:var(--accent); text-underline-offset:5px; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+nav { display:flex; flex-wrap:wrap; gap:24px; margin-top:32px; }
+nav a { padding-block:12px; }

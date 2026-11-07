@@ -1,3 +1,8 @@
 **/.DS_Store
 /apps/README.md
 **/README.md
+!/README.md
+/public/
+__pycache__/
+/docs/
+/scripts/

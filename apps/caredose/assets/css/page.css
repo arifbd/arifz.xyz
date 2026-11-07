@@ -1,0 +1,6 @@
+.hero h1 { font-size: clamp(44px, 5.5vw, 68px); }
+.hero-preview { transform: none; }
+.hero-preview figure { max-width: 310px; }
+.feature-number { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid var(--line); border-radius: 50%; color: var(--accent); font-size: 14px; }
+.medical-note { margin-block: 0 48px; }
+@media (max-width: 640px) { .hero h1 { font-size: clamp(38px, 10.5vw, 56px); } }
