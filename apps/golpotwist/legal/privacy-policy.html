@@ -14,23 +14,37 @@
     <header><p class="brand">GolpoTwist · by arifz</p>
         <h1>Privacy Policy</h1>
         <p class="meta">Last updated:
-            <time datetime="2026-11-07">November 7, 2026</time>
+            <time datetime="2026-11-21">November 21, 2026</time>
         </p>
     </header>
     <section><h2>1. Overview</h2>
         <p>GolpoTwist is a Bengali interactive storytelling app developed by Md Nazmul Haque Arif, operating under the
             name arifz (“we”, “us”). This policy explains
-            local storage, advertising, purchases, diagnostics and your choices. The Android package is <strong>xyz.arifz.golpotwist</strong>.
+            local storage, backups, purchases, diagnostics and your choices. The Android package is <strong>xyz.arifz.golpotwist</strong>.
             You do not need a developer-operated
-            account. Some features work offline after their content is downloaded; ads, purchases and downloads use
-            online services.</p></section>
+            account. Available story text and saved progress can be used offline; purchases, media downloads, system
+            backups and enabled diagnostics use online services. Advertising is disabled in the current release.</p></section>
     <section><h2>2. Information stored on your device</h2>
-        <p>The app stores story progress, save slots, choices, unlocked endings, diamond balances, purchase-related
-            records and reading, audio, reminder and privacy preferences in private app storage. This supports
-            continuing stories, delivering purchases and remembering your settings. We do not operate a cloud account or
-            a server for synchronizing your saved stories.</p></section>
+        <p>The app stores story progress and choices, save slots, reading and scroll positions, unlocked endings,
+            chapter and hint unlocks, extra save slots, diamond balances and earning/spending records, daily reward
+            claims, current and best streaks, and purchase-related records in private app storage. Records can include
+            story or product identifiers, timestamps and, for older diamond purchases, purchase tokens used to prevent
+            duplicate credits. These records support continuing stories, rewards and purchased access.</p>
+        <p>Reading preferences include text size, line spacing, theme, screen brightness, orientation and keeping the
+            reader screen on. We also store audio levels, reminder and privacy choices, and which media packs you have
+            removed. The reward system uses the device's date, time zone, boot count and elapsed time locally to limit
+            repeated reward claims. These clock records are not a GPS location or a persistent device identifier.</p>
+        <p>Story artwork, music and sound effects are app content, not recordings or files collected from your personal
+            media library. We do not operate a cloud account or our own server for synchronizing saved stories. Android
+            backup can transfer progress and settings off the device as explained in section 8; selected usage events
+            can also be sent to Firebase as explained below.</p></section>
     <section><h2>3. Advertising and consent</h2>
-        <p>GolpoTwist uses Google AdMob and Google’s User Messaging Platform. The advertising SDK may process IP
+        <p>The current release does not request or display banner, chapter-end or rewarded ads, and does not offer
+            Remove Ads for sale. Google AdMob and Google's User Messaging Platform libraries remain included, but the
+            app's advertising and advertising-consent flows are disabled. This does not disable the separate Firebase,
+            Google Play or Android backup features described in this policy.</p>
+        <p>If you use an earlier version with advertising enabled, Google AdMob and Google's User Messaging Platform
+            handle advertising and consent. In those versions, the advertising SDK may process IP
             addresses (which can indicate approximate location), device and advertising identifiers (including
             advertising ID and app set ID), app interactions,
             ad views and clicks, and diagnostic information to deliver and measure ads and prevent fraud. Personalized
@@ -40,14 +54,21 @@
             switch. App set ID is used for essential purposes such as analytics and fraud prevention, not ad
             personalization or ad measurement; we do not combine it with personal information or other device
             identifiers for advertising purposes.</p>
-        <p>The Remove Ads purchase removes the placements described in the store. Optional rewarded ads remain
+        <p>In versions with advertising enabled, the Remove Ads purchase removes the placements described in the store.
+            Optional rewarded ads remain
             available, and the advertising SDK may prepare them in advance. Buying Remove Ads does not by itself switch
-            off analytics or all advertising-SDK processing.</p></section>
+            off analytics or all advertising-SDK processing. If advertising is introduced in a later release, we will
+            update the relevant disclosures and provide any consent choices required before that processing begins.</p></section>
     <section><h2>4. Analytics and crash reports</h2>
-        <p>When enabled, Firebase Analytics and Firebase Crashlytics process app/device information, app-instance or
-            installation identifiers, usage events and crash diagnostics to understand usage and improve reliability.
-            Events include story and chapter identifiers, starts and completions, premium-choice use, endings reached or
-            shared, downloads and errors, and purchase outcomes. These records are not necessarily anonymous merely
+        <p>When enabled, Google Analytics for Firebase and Firebase Crashlytics process app/device information,
+            app-instance or installation identifiers, usage events and crash diagnostics to understand usage and improve
+            reliability. This can include app version, device model, operating system, interaction times, crash traces
+            and diagnostic logs. Online requests expose an IP address to the receiving service; Analytics can derive
+            approximate geographic information from network information without accessing GPS.</p>
+        <p>Custom events include story and chapter identifiers, save-slot number and whether a story was resumed,
+            starts and completions, whether a choice used diamonds, endings reached or shared, where a reading session
+            stopped, paywalls shown, media-download identifiers and error codes, and product identifiers and purchase
+            outcomes. SDKs can also generate automatic usage and diagnostic events. These records are not necessarily anonymous merely
             because they do not include your name. The app does not deliberately send story text or a personal account
             profile in its custom events. Analytics advertising-ID collection and analytics advertising-personalization
             signals are disabled in the app configuration.</p></section>
@@ -63,43 +84,71 @@
             signals without stored analytics identifiers. Previously transmitted data is not automatically deleted.
             Crash reports can remain locally queued and may be uploaded if reporting is later enabled. Saved consent
             choices can persist between launches.</p>
-        <p>Declining analytics does not prevent reading stories. Advertising consent is controlled separately. See <a
+        <p>Declining analytics does not prevent reading stories or receiving daily rewards. It does not disable
+            purchases, media downloads, feedback you send or Android backup. In versions with ads, advertising consent
+            is controlled separately. See <a
                 href="https://developers.google.com/tag-platform/security/concepts/consent-mode">Google's explanation of
             consent mode</a>.</p></section>
     <section><h2>6. Purchases and Google Play</h2>
         <p>Google Play Billing handles payment for digital products. Google processes payment/account information under
             its own policies; we do not receive your payment-card details through the app. The app processes product
-            identifiers, purchase tokens, purchase status and entitlement information to deliver purchases and avoid
-            duplicate credits. Google Play Asset Delivery handles media downloads and may process device, app and
-            delivery information. Google Play may retain transaction records independently of app deletion.</p>
+            identifiers, purchase tokens, purchase status, signed purchase information and entitlements to validate and
+            deliver purchases, restore access and avoid duplicate credits. Purchase checks run when the app opens and
+            when you request a restore. Current purchases unlock individual stories or fixed story volumes; older
+            purchases can include Remove Ads or the retired diamond pack. We do not sell diamonds in the current release.
+            Google Play may retain transaction records independently of app deletion.</p>
+        <p>Google Play Asset Delivery handles story artwork, music and sound downloads and may process device, app and
+            delivery information. The app can automatically request missing media when it opens or a story opens, using
+            network data and storage subject to Google Play's delivery controls. Removing a downloadable media pack
+            frees its media storage without deleting the story's text or progress. The app remembers that removal and
+            excludes the pack from automatic prefetch until you request it again.</p>
     </section>
     <section><h2>7. Permissions, reminders and sharing</h2>
         <p>Internet and network-state access support online features. Optional notification permission enables reminders
-            about unfinished stories; you can disable reminders in the app or Android settings. When you choose to share
-            an ending, Android sends the selected share content to the destination you choose. That destination handles
-            the content under its own policy. The app does not require access to contacts, microphone, camera or precise
+            about unfinished stories; you can disable reminders in the app or Android settings. Reminders are scheduled
+            locally from saved progress and can show a story title and chapter on your notification or lock screen,
+            depending on your Android settings.</p>
+        <p>When you choose to share an ending, the app creates an image in its private cache and opens Android's share
+            sheet. The image and accompanying text can reveal the story, ending and how many endings you have found.
+            Only the destination you choose receives the selected content through that action; the destination handles
+            it under its own policy and may publish it to the audience you select. The cached image can remain until
+            replaced, cleared by Android or removed with app data. The app does not require access to contacts, microphone, camera or precise
             device location for storytelling. Included service libraries also use advertising/attribution permissions
             and background-work permissions for advertising measurement, uploads and content delivery; these do not
             grant access to your contacts or precise location.</p></section>
     <section><h2>8. Backup, retention and deletion</h2>
-        <p>Story databases and preferences are included in Android backup and device-transfer rules. Whether copies are
-            made or restored depends on your device and backup settings; the backup provider processes those copies.
-            Local records remain until removed or app storage is cleared. To remove local data, use Android Settings →
+        <p>The app asks Android's backup service to save a progress snapshot when relevant progress changes. The
+            snapshot includes the diamond ledger (including any historical purchase-token records), chapter and hint
+            unlocks, extra slots, reward claims and streaks, saves and choices, endings, reading positions and settings,
+            including privacy choices. Android and your configured backup provider, such as Google, handle the backup;
+            this is separate from a developer-operated cloud account. Older database-and-preference backups can also
+            be restored. Current Google Play purchase entitlements are restored from Play separately.</p>
+        <p>Backup and restoration depend on device settings, account, available quota, Android scheduling and compatible
+            backup data. Backups may be delayed, missing or older than your latest progress. A restore can replace local
+            progress and settings rather than merge progress from different devices. Restored privacy choices can take
+            effect again; review them in Settings after restoring. We cannot access or delete your system backup for you.
+            Manage or delete existing backups through Android or your backup provider; uninstalling alone does not
+            necessarily delete them.</p>
+        <p>Local records remain until removed or app storage is cleared. To remove local data, use Android Settings →
             Apps → GolpoTwist → Storage → Clear storage/data, or uninstall. This can permanently remove progress and
-            consumable diamond balances. Manage existing backups separately with your backup provider. Clearing app
+            earned or historically purchased diamonds and locally earned unlocks. Clearing app
             storage does not erase Google Play transactions, previously shared content or previously transmitted SDK
             records.</p>
         <p>Google states that Crashlytics retains crash traces and associated installation identifiers for 90 days
             before beginning removal from live and backup systems. Analytics user/event retention follows the project's
-            configured retention controls; aggregated reporting can follow different retention rules. Advertising and
-            Play transaction records follow Google's applicable retention policies. There is no single retention period
+            configured retention controls for usage and reliability analysis; expiry can reset with new activity where
+            that setting is enabled, and aggregated reporting can follow different retention rules. Contact us to ask
+            about the current retention setting or request deletion of identifiable records we control. Historical
+            advertising and Google Play transaction records follow Google's applicable retention policies. There is no single retention period
             covering every service. See <a href="https://firebase.google.com/support/privacy">Firebase retention
                 information</a> and <a href="https://support.google.com/analytics/answer/7667196">Analytics retention
                 controls</a>. Contact us for deletion requests concerning information we hold; do not send
             purchase tokens or payment details.</p></section>
     <section><h2>9. Recipients, security and international processing</h2>
-        <p>Google and its service providers process information for advertising, analytics, crash reporting, purchases
-            and delivery. Data may be processed outside your country under their applicable safeguards and terms. We do
+        <p>Google and its service providers process information for analytics, crash reporting, purchases, delivery and
+            Google-managed backups; advertising processing applies to advertising-enabled versions as described in
+            section 3. Your chosen email, sharing and other backup providers process information you send through them.
+            Data may be processed outside your country under the providers' applicable safeguards and terms. We do
             not sell your saved story records. Advertising services may use information for ad delivery and measurement
             as described above. We may disclose information we actually hold when legally required or necessary to
             protect rights and prevent abuse. Android app isolation and service-provider transport protections help
@@ -108,8 +157,10 @@
         <p>For processing that we determine, the responsible provider is Md Nazmul Haque Arif (arifz), Bangladesh. Our
             postal address and contact phone are in the <a href="/apps/golpotwist/legal/terms-of-service.html#provider">provider
                 information</a>. Email <a href="mailto:arif991846@gmail.com">arif991846@gmail.com</a> for privacy
-            questions or requests. If
-            you contact us, we receive your address, message and attachments, and our email provider processes them. We
+            questions or requests. The in-app feedback action opens your email app with the app version, Android
+            version and device manufacturer/model prefilled. You can review, change or remove those details before
+            sending; opening the draft does not itself send an email to us. If you send it or otherwise contact us, we
+            receive your email address, message, included device details and any attachments, and our email provider processes them. We
             retain correspondence as needed to answer, resolve follow-up and meet applicable legal obligations.
             Depending on applicable law, you may request access, correction or deletion, object to processing or
             withdraw consent, and complain to your local data-protection authority. We cannot identify or remotely
